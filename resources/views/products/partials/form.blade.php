@@ -51,7 +51,7 @@
 
 <div class="mb-3">
     <label for="description" class="form-label">Deskripsi</label>
-    <textarea name="description" class="form-control" rows="3" placeholder="Masukkan deskripsi">{{ old('description', $product->description ?? '') }}</textarea>
+    <textarea name="description" id="description" class="form-control" rows="3" placeholder="Masukkan deskripsi">{{ old('description', $product->description ?? '') }}</textarea>
 </div>
 
 <div class="d-flex justify-content-end">
@@ -68,4 +68,14 @@ function previewImage(event) {
     };
     reader.readAsDataURL(event.target.files[0]);
 }
+</script>
+
+{{-- CKEditor 5 CDN & Init --}}
+<script src="https://cdn.ckeditor.com/ckeditor5/39.0.1/classic/ckeditor.js"></script>
+<script>
+    ClassicEditor
+        .create(document.querySelector('#description'))
+        .catch(error => {
+            console.error(error);
+        });
 </script>

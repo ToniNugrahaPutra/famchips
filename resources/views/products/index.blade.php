@@ -13,12 +13,11 @@
             <a href="{{ route('products.create') }}" class="btn btn-primary ms-2">+ Tambah Produk</a>
         </div>
     </div>
-
     {{-- Grid produk --}}
     <div class="row">
         @forelse($products as $product)
             <div class="col-md-3 mb-4">
-                <div class="card h-100 shadow-sm">
+                <div class="card shadow-sm d-flex flex-column">
                     {{-- Gambar --}}
                     @if($product->image)
                         <img src="{{ asset('storage/'.$product->image) }}" 
@@ -33,10 +32,10 @@
                     @endif
 
                     {{-- Isi card --}}
-                    <div class="card-body">
+                    <div class="card-body flex-grow-1">
                         <h5 class="card-title">{{ $product->name }}</h5>
-                        <p class="card-text small text-truncate">{{ $product->description ?? '-' }}</p>
-                    </div>
+                        <div class="card-text small product-description">{!! $product->description ?? '-' !!}</div>
+                </div>
 
                     {{-- Tombol aksi --}}
                     <div class="card-footer d-flex justify-content-between">
@@ -63,3 +62,50 @@
     </div>
 </div>
 @endsection
+
+<style>
+.card .card-body .product-description {
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    max-height: 200px; 
+}
+
+
+.card .card-body .product-description img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin: 8px 0;
+    display: block; 
+    object-fit: contain; 
+}
+
+.card .card-body .product-description iframe {
+    max-width: 100%;
+    border-radius: 6px;
+}
+
+.card .card-body .product-description table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.card .card-body .product-description pre,
+.card .card-body .product-description code {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    max-width: 100%;
+    display: block;
+}
+
+.card-footer {
+    background: #fff;
+    border-top: 1px solid #eee;
+}
+
+.card-footer .btn {
+    min-width: 70px;  
+    text-align: center;
+}
+</style>
+
