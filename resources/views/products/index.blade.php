@@ -1,15 +1,18 @@
+
 @extends('layouts.app')
 
 @section('content')
 <div class="container">
     <div class="d-flex justify-content-between align-items-center mb-3">
         <h3>Daftar Produk</h3>
-        <a href="{{ route('products.create') }}" class="btn btn-primary">+ Tambah Produk</a>
+        <div class="d-flex gap-2">
+            <form action="{{ route('products.index') }}" method="GET" class="d-flex">
+                <input type="text" name="search" class="form-control me-2" placeholder="Cari produk..." value="{{ request('search') }}">
+                <button class="btn btn-outline-secondary" type="submit">Cari</button>
+            </form>
+            <a href="{{ route('products.create') }}" class="btn btn-primary ms-2">+ Tambah Produk</a>
+        </div>
     </div>
-
-    @if(session('success'))
-        <div class="alert alert-success">{{ session('success') }}</div>
-    @endif
 
     {{-- Grid produk --}}
     <div class="row">
@@ -32,8 +35,6 @@
                     {{-- Isi card --}}
                     <div class="card-body">
                         <h5 class="card-title">{{ $product->name }}</h5>
-                        <!-- <p class="card-text text-muted mb-1"><strong>Berat:</strong> {{ $product->weight }}</p>
-                        <p class="card-text text-muted mb-1"><strong>Varian:</strong> {{ $product->variant }}</p> -->
                         <p class="card-text small text-truncate">{{ $product->description ?? '-' }}</p>
                     </div>
 

@@ -2,20 +2,9 @@
 
 @section('content')
 <div class="container">
-    <h3 class="mb-4">Tambah Produk</h3>
-
-    @if($errors->any())
-        <div class="alert alert-danger">
-            <ul class="mb-0">
-                @foreach($errors->all() as $err)
-                    <li>{{ $err }}</li>
-                @endforeach
-            </ul>
-        </div>
-    @endif
-
+    <h3>Tambah Produk</h3>
     <form action="{{ route('products.store') }}" method="POST" enctype="multipart/form-data">
-        @include('products.partials.form', ['submit' => 'Simpan'])
+        @include('products.partials.form', ['submit' => 'Tambah'])
     </form>
 </div>
 @endsection

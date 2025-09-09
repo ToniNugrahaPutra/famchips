@@ -56,6 +56,10 @@ class ArticleController extends Controller
         $data = $request->only(['title', 'status', 'description']);
 
         if ($request->hasFile('image')) {
+            // Hapus gambar lama jika ada
+            if ($article->image) {
+                Storage::disk('public')->delete($article->image);
+            }
             $data['image'] = $request->file('image')->store('articles', 'public');
         }
 
@@ -66,7 +70,12 @@ class ArticleController extends Controller
 
     public function destroy(Article $article)
     {
+        if ($article->image) {
+            Storage::disk('public')->delete($article->image);
+        }
+
         $article->delete();
+
         return redirect()->route('articles.index')->with('success', 'Artikel berhasil dihapus');
     }
 }

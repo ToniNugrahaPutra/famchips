@@ -23,10 +23,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        // Biar kolom string default tidak error di MySQL lama (index length issue)
+         
         Schema::defaultStringLength(191);
 
-        // Supaya pagination pakai Bootstrap style
         Paginator::useBootstrap();
     }
 }

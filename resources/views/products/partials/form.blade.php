@@ -1,16 +1,18 @@
 @csrf
 
 {{-- Preview Gambar --}}
-    <div class="text-center mb-4">
-        <label for="image" class="d-block">
+<div class="text-center mb-4">
+    <label for="image" class="d-block">
         <img id="preview" 
-             src="https://via.placeholder.com/300x300?text=Upload+Image"
-             class="rounded border border-2"
-             style="cursor:pointer; max-height: 300px; width: 300px; object-fit: cover;">
-        </label>
-        <input type="file" name="image" id="image" class="d-none" accept="image/*"
+             src="{{ isset($product) && $product->image 
+                        ? asset('storage/'.$product->image) 
+                        : 'https://via.placeholder.com/300x200?text=Upload+Image' }}"
+             class="rounded border border-2 mx-auto d-block"
+             style="cursor:pointer; max-height: 250px; max-width: 300px; width: 100%; object-fit: cover;">
+    </label>
+    <input type="file" name="image" id="image" class="d-none" accept="image/*"
            onchange="previewImage(event)">
-    </div>
+</div>
 
 <div class="row mb-3">
     <div class="col-md-6">
