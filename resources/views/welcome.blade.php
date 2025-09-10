@@ -405,398 +405,81 @@
                     </p>
                 </div>
 
-                <!-- Product Section -->
-                <div class="relative mx-auto">
-                    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
-                        
-                        <div class="group relative">
-                            <div class="relative">
-                                <div class="aspect-[3/4] w-full mb-3 sm:mb-4 rounded overflow-hidden">
-                                    <img class="w-full h-full object-cover object-center"
-                                        src="product_compressed/KeripikApel-Famchips.jpg" alt="content">
-                                </div>
+<!-- Product Section -->
+<div class="relative mx-auto">
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
 
-                                <!-- This stays visible below the image -->
-                                <h2 class="text-sm sm:text-base md:text-lg text-gray-800 font-semibold mb-1 sm:mb-2">
-                                    Apple Freezeredried
-                                </h2>
-                                <p class="leading-relaxed text-xs sm:text-sm text-gray-600 font-light h-16">
-                                    Keripik Apel segar yang dibekukan jadi camilan renyah, dan bergizi.
-                                </p>
-                                <div class="flex justify-center items-center mt-3 w-full">
-                                    <a href="https://wa.me/+6281333500579" target="_blank"
-                                    class="flex items-center px-3 py-2 sm:px-4 text-[#a4ce3e] bg-white hover:bg-[#a4ce3e] hover:text-white border-2 border-[#a4ce3e] font-medium rounded-full text-sm transition-colors">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                            stroke-width="1.5" stroke="currentColor" class="size-5 mr-2">
-                                            <path stroke-linecap="round" stroke-linejoin="round"
-                                                d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
-                                        </svg>
-                                        <p>Order Now</p>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <!-- Hover -->
-                            <div
-                                class="absolute rounded inset-0 bg-black/60 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-center items-center text-white text-center px-4">
-                                <div class="mb-4">
-                                    <h3 class="font-semibold text-base">Ingredients</h3>
-                                    <p class="text-sm text-gray-200">Chili, Wheat Flour, Coconut Oil</p>
-                                </div>
-                                <div class="mb-4">
-                                    <h3 class="font-semibold text-base">Expire Date</h3>
-                                    <p class="text-sm text-gray-200">12 month</p>
-                                </div>
-                                <a href="https://wa.me/+6281333500579" target="_blank"
-                                class="flex items-center px-4 py-2 text-[#a4ce3e] bg-white hover:bg-[#a4ce3e] hover:text-white border-2 border-[#a4ce3e] font-medium rounded-full text-sm transition-colors">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mr-2">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
-                                    </svg>
-                                    Order Now
-                                </a>
-                            </div>
-                        </div>
-
-
-                        <div class="group relative">
-                            <div class="relative">
-                                <div class="aspect-[3/4] w-full mb-3 sm:mb-4 rounded overflow-hidden">
-                                    <img class="w-full h-full object-cover object-center"
-                                        src="product_compressed/KeripikBawangPutih.jpg" alt="content">
-                                </div>
-                                <h2 class="text-sm sm:text-base md:text-lg text-gray-800 font-semibold mb-1 sm:mb-2">
-                                    Garlic Chips
-                                </h2>
-                                <p class="leading-relaxed text-xs sm:text-sm text-gray-600 font-light h-16">
-                                    Keripik Bawang Putih dengan aroma kuat serta rasa gurih, cocok untuk penggemar rasa bawang putih.
-                                </p>
-                            </div>
-                            <div
-                                class="absolute inset-0 bg-black/60 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-center items-center text-white text-center px-4">
-                                <div class="mb-4">
-                                    <h3 class="font-semibold text-base">Ingredients</h3>
-                                    <p class="text-sm text-gray-200">Chili, Wheat Flour, Coconut Oil</p>
-                                </div>
-                                <div class="mb-4">
-                                    <h3 class="font-semibold text-base">Expire Date</h3>
-                                    <p class="text-sm text-gray-200">12 month</p>
-                                </div>
-                                <a href="https://wa.me/+6281333500579" target="_blank"
-                                class="flex items-center px-4 py-2 text-[#a4ce3e] bg-white hover:bg-[#a4ce3e] hover:text-white border-2 border-[#a4ce3e] font-medium rounded-full text-sm transition-colors">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mr-2">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
-                                    </svg>
-                                    Order Now
-                                </a>
-                            </div>
-                            <div class="flex justify-center items-center mt-3 w-full">
-                                <a href="https://wa.me/+6281333500579" target="_blank"
-                                class="flex items-center px-3 py-2 sm:px-4 text-[#a4ce3e] bg-white hover:bg-[#a4ce3e] hover:text-white border-2 border-[#a4ce3e] focus:outline-none font-medium rounded-full text-sm text-center transition-colors">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke-width="1.5" stroke="currentColor" class="size-5 mr-2">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
-                                    </svg>
-                                    <p>Order Now</p>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="group relative">
-                            <div class="relative">
-                                <div class="aspect-[3/4] w-full mb-3 sm:mb-4 rounded overflow-hidden">
-                                    <img class="w-full h-full object-cover object-center"
-                                        src="product_compressed/KeripikBawangMerah.jpg" alt="content">
-                                </div>
-                                <h2 class="text-sm sm:text-base md:text-lg text-gray-800 font-semibold mb-1 sm:mb-2">
-                                    Shallot Chips
-                                </h2>
-                                <p class="leading-relaxed text-xs sm:text-sm text-gray-600 font-light h-16">
-                                    Keripik Bawang Merah yang renyah dan gurih, tambahan sempurna untuk hidangan atau camilan langsung.
-                                </p>
-                            </div>
-                            <div
-                                class="absolute inset-0 bg-black/60 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-center items-center text-white text-center px-4">
-                                <div class="mb-4">
-                                    <h3 class="font-semibold text-base">Ingredients</h3>
-                                    <p class="text-sm text-gray-200">Chili, Wheat Flour, Coconut Oil</p>
-                                </div>
-                                <div class="mb-4">
-                                    <h3 class="font-semibold text-base">Expire Date</h3>
-                                    <p class="text-sm text-gray-200">12 month</p>
-                                </div>
-                                <a href="https://wa.me/+6281333500579" target="_blank"
-                                class="flex items-center px-4 py-2 text-[#a4ce3e] bg-white hover:bg-[#a4ce3e] hover:text-white border-2 border-[#a4ce3e] font-medium rounded-full text-sm transition-colors">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mr-2">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
-                                    </svg>
-                                    Order Now
-                                </a>
-                            </div>
-                            <div class="flex justify-center items-center mt-3 w-full">
-                                <a href="https://wa.me/+6281333500579" target="_blank"
-                                class="flex items-center px-3 py-2 sm:px-4 text-[#a4ce3e] bg-white hover:bg-[#a4ce3e] hover:text-white border-2 border-[#a4ce3e] focus:outline-none font-medium rounded-full text-sm text-center transition-colors">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke-width="1.5" stroke="currentColor" class="size-5 mr-2">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
-                                    </svg>
-                                    <p>Order Now</p>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="group relative">
-                            <div class="relative">
-                                <div class="aspect-[3/4] w-full mb-3 sm:mb-4 rounded overflow-hidden">
-                                    <img class="w-full h-full object-cover object-center"
-                                        src="product_compressed/KeripikBrokoli.jpg" alt="content">
-                                </div>
-                                <h2 class="text-sm sm:text-base md:text-lg text-gray-800 font-semibold mb-1 sm:mb-2">
-                                    Broccoli Chips
-                                </h2>
-                                <p class="leading-relaxed text-xs sm:text-sm text-gray-600 font-light h-16">
-                                    Keripik Broccoli sehat dari brokoli asli, renyah, gurih dan nutrisinya tetap menyehatkan
-                                </p>
-                            </div>
-                            <div
-                                class="absolute inset-0 bg-black/60 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-center items-center text-white text-center px-4">
-                                <div class="mb-4">
-                                    <h3 class="font-semibold text-base">Ingredients</h3>
-                                    <p class="text-sm text-gray-200">Chili, Wheat Flour, Coconut Oil</p>
-                                </div>
-                                <div class="mb-4">
-                                    <h3 class="font-semibold text-base">Expire Date</h3>
-                                    <p class="text-sm text-gray-200">12 month</p>
-                                </div>
-                                <a href="https://wa.me/+6281333500579" target="_blank"
-                                class="flex items-center px-4 py-2 text-[#a4ce3e] bg-white hover:bg-[#a4ce3e] hover:text-white border-2 border-[#a4ce3e] font-medium rounded-full text-sm transition-colors">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mr-2">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
-                                    </svg>
-                                    Order Now
-                                </a>
-                            </div>
-                            <div class="flex justify-center items-center mt-3 w-full">
-                                <a href="https://wa.me/+6281333500579" target="_blank"
-                                class="flex items-center px-3 py-2 sm:px-4 text-[#a4ce3e] bg-white hover:bg-[#a4ce3e] hover:text-white border-2 border-[#a4ce3e] focus:outline-none font-medium rounded-full text-sm text-center transition-colors">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke-width="1.5" stroke="currentColor" class="size-5 mr-2">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
-                                    </svg>
-                                    <p>Order Now</p>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="group relative">
-                            <div class="relative">
-                                <div class="aspect-[3/4] w-full mb-3 sm:mb-4 rounded overflow-hidden">
-                                    <img class="w-full h-full object-cover object-center"
-                                        src="product_compressed/KeripikBananafreez.jpg" alt="content">
-                                </div>
-                                <h2 class="text-sm sm:text-base md:text-lg text-gray-800 font-semibold mb-1 sm:mb-2">
-                                    Banana Freezdried
-                                </h2>
-                                <p class="leading-relaxed text-xs sm:text-sm text-gray-600 font-light h-16">
-                                    Keripik Pisang beku dengan rasa manis alami dan tekstur renyah yang unik, camilan sehat untuk keluarga.
-                                </p>
-                            </div>
-                            <div
-                                class="absolute inset-0 bg-black/60 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-center items-center text-white text-center px-4">
-                                <div class="mb-4">
-                                    <h3 class="font-semibold text-base">Ingredients</h3>
-                                    <p class="text-sm text-gray-200">Chili, Wheat Flour, Coconut Oil</p>
-                                </div>
-                                <div class="mb-4">
-                                    <h3 class="font-semibold text-base">Expire Date</h3>
-                                    <p class="text-sm text-gray-200">12 month</p>
-                                </div>
-                                <a href="https://wa.me/+6281333500579" target="_blank"
-                                class="flex items-center px-4 py-2 text-[#a4ce3e] bg-white hover:bg-[#a4ce3e] hover:text-white border-2 border-[#a4ce3e] font-medium rounded-full text-sm transition-colors">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mr-2">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
-                                    </svg>
-                                    Order Now
-                                </a>
-                            </div>
-                            <div class="flex justify-center items-center mt-3 w-full">
-                                <a href="https://wa.me/+6281333500579" target="_blank"
-                                class="flex items-center px-3 py-2 sm:px-4 text-[#a4ce3e] bg-white hover:bg-[#a4ce3e] hover:text-white border-2 border-[#a4ce3e] focus:outline-none font-medium rounded-full text-sm text-center transition-colors">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke-width="1.5" stroke="currentColor" class="size-5 mr-2">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
-                                    </svg>
-                                    <p>Order Now</p>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="group relative">
-                            <div class="relative">
-                                <div class="aspect-[3/4] w-full mb-3 sm:mb-4 rounded overflow-hidden">
-                                    <img class="w-full h-full object-cover object-center"
-                                        src="product_compressed/KeripikBuahApel.jpg" alt="content">
-                                </div>
-                                <h2 class="text-sm sm:text-base md:text-lg text-gray-800 font-semibold mb-1 sm:mb-2">
-                                    Apple Chips
-                                </h2>
-                                <p class="leading-relaxed text-xs sm:text-sm text-gray-600 font-light h-16">
-                                    Keripik apel renyah alami dari irisan apel pilihan. Tanpa pewarna untuk menjaga rasa dan gizi.
-                                </p>
-                            </div>
-                            <div
-                                class="absolute inset-0 bg-black/60 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-center items-center text-white text-center px-4">
-                                <div class="mb-4">
-                                    <h3 class="font-semibold text-base">Ingredients</h3>
-                                    <p class="text-sm text-gray-200">Chili, Wheat Flour, Coconut Oil</p>
-                                </div>
-                                <div class="mb-4">
-                                    <h3 class="font-semibold text-base">Expire Date</h3>
-                                    <p class="text-sm text-gray-200">12 month</p>
-                                </div>
-                                <a href="https://wa.me/+6281333500579" target="_blank"
-                                class="flex items-center px-4 py-2 text-[#a4ce3e] bg-white hover:bg-[#a4ce3e] hover:text-white border-2 border-[#a4ce3e] font-medium rounded-full text-sm transition-colors">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mr-2">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
-                                    </svg>
-                                    Order Now
-                                </a>
-                            </div>
-                            <div class="flex justify-center items-center mt-3 w-full">
-                                <a href="https://wa.me/+6281333500579" target="_blank"
-                                class="flex items-center px-3 py-2 sm:px-4 text-[#a4ce3e] bg-white hover:bg-[#a4ce3e] hover:text-white border-2 border-[#a4ce3e] focus:outline-none font-medium rounded-full text-sm text-center transition-colors">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke-width="1.5" stroke="currentColor" class="size-5 mr-2">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
-                                    </svg>
-                                    <p>Order Now</p>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="group relative">
-                            <div class="relative">
-                                <div class="aspect-[3/4] w-full mb-3 sm:mb-4 rounded overflow-hidden">
-                                    <img class="w-full h-full object-cover object-center" src="product_compressed/KeripikMangga.jpg"
-                                        alt="content">
-                                </div>
-                                <h2 class="text-sm sm:text-base md:text-lg text-gray-800 font-semibold mb-1 sm:mb-2">
-                                    Mango Chips
-                                </h2>
-                                <p class="leading-relaxed text-xs sm:text-sm text-gray-600 font-light h-16">
-                                    Keripik Nangka matang dengan rasa yang khas, pas untuk camilan keluarga.
-                                </p>
-                            </div>
-                            <div
-                                class="absolute inset-0 bg-black/60 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-center items-center text-white text-center px-4">
-                                <div class="mb-4">
-                                    <h3 class="font-semibold text-base">Ingredients</h3>
-                                    <p class="text-sm text-gray-200">Chili, Wheat Flour, Coconut Oil</p>
-                                </div>
-                                <div class="mb-4">
-                                    <h3 class="font-semibold text-base">Expire Date</h3>
-                                    <p class="text-sm text-gray-200">12 month</p>
-                                </div>
-                                <a href="https://wa.me/+6281333500579" target="_blank"
-                                class="flex items-center px-4 py-2 text-[#a4ce3e] bg-white hover:bg-[#a4ce3e] hover:text-white border-2 border-[#a4ce3e] font-medium rounded-full text-sm transition-colors">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mr-2">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
-                                    </svg>
-                                    Order Now
-                                </a>
-                            </div>
-                            <div class="flex justify-center items-center mt-3 w-full">
-                                <a href="https://wa.me/+6281333500579" target="_blank"
-                                class="flex items-center px-3 py-2 sm:px-4 text-[#a4ce3e] bg-white hover:bg-[#a4ce3e] hover:text-white border-2 border-[#a4ce3e] focus:outline-none font-medium rounded-full text-sm text-center transition-colors">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke-width="1.5" stroke="currentColor" class="size-5 mr-2">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
-                                    </svg>
-                                    <p>Order Now</p>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="group relative">
-                            <div class="relative">
-                                <div class="aspect-[3/4] w-full mb-3 sm:mb-4 rounded overflow-hidden">
-                                    <img class="w-full h-full object-cover object-center" src="product_compressed/KeripikCabe.jpg"
-                                        alt="content">
-                                </div>
-                                <h2 class="text-sm sm:text-base md:text-lg text-gray-800 font-semibold mb-1 sm:mb-2">
-                                    Chilli Chips
-                                </h2>
-                                <p class="leading-relaxed text-xs sm:text-sm text-gray-600 font-light h-16">
-                                    Keripik Cabai yang pedas gurihnya nendang, pas buat camilan kamu.
-                                </p>
-                            </div>
-                            <div
-                                class="absolute inset-0 bg-black/60 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-center items-center text-white text-center px-4">
-                                <div class="mb-4">
-                                    <h3 class="font-semibold text-base">Ingredients</h3>
-                                    <p class="text-sm text-gray-200">Chili, Wheat Flour, Coconut Oil</p>
-                                </div>
-                                <div class="mb-4">
-                                    <h3 class="font-semibold text-base">Expire Date</h3>
-                                    <p class="text-sm text-gray-200">12 month</p>
-                                </div>
-                                <a href="https://wa.me/+6281333500579" target="_blank"
-                                class="flex items-center px-4 py-2 text-[#a4ce3e] bg-white hover:bg-[#a4ce3e] hover:text-white border-2 border-[#a4ce3e] font-medium rounded-full text-sm transition-colors">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mr-2">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
-                                    </svg>
-                                    Order Now
-                                </a>
-                            </div>
-                            <div class="flex justify-center items-center mt-3 w-full">
-                                <a href="https://wa.me/+6281333500579" target="_blank"
-                                class="flex items-center px-3 py-2 sm:px-4 text-[#a4ce3e] bg-white hover:bg-[#a4ce3e] hover:text-white border-2 border-[#a4ce3e] focus:outline-none font-medium rounded-full text-sm text-center transition-colors">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke-width="1.5" stroke="currentColor" class="size-5 mr-2">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
-                                    </svg>
-                                    <p>Order Now</p>
-                                </a>
-                            </div>
-                        </div>
-
-                    </div>
+        @foreach ($products as $product)
+        <div class="group relative">
+            <div class="relative">
+                <!-- Gambar -->
+                <div class="aspect-[3/4] w-full mb-3 sm:mb-4 rounded overflow-hidden">
+                    <img class="w-full h-full object-cover object-center"
+                         src="{{ asset('storage/' . $product->image) }}" alt="{{ $product->name }}">
                 </div>
 
-                <div class="flex justify-center pt-10 space-x-2">
-                    <a href="<a href="{{ route('products.front') }}""
-                        class="flex items-center px-3 py-2 sm:px-4 text-white bg-primary hover:bg-white hover:text-[#a4ce3e] border-2 hover:border-primary focus:outline-none font-medium rounded-full text-sm sm:text-md md:text-lg text-center transition-colors">
-                        <p>Produk Lainnya</p>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke-width="1.5" stroke="currentColor" class="size-5 ml-2">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                        </svg>
+                {{-- Nama & Deskripsi --}}
+                <h2 class="text-sm sm:text-base md:text-lg text-gray-800 font-semibold mb-1 sm:mb-2">
+                {{ $product->name }}
+                </h2>
+                <p class="leading-relaxed text-xs sm:text-sm text-gray-600 font-light h-16">
+                {!! Str::limit(strip_tags($product->description), 80) !!}
+                </p>
 
+                <!-- Tombol Order -->
+                <div class="flex justify-center items-center mt-3 w-full">
+                    <a href="https://wa.me/{{ $product->whatsapp }}" target="_blank"
+                        class="flex items-center px-3 py-2 sm:px-4 text-[#a4ce3e] bg-white hover:bg-[#a4ce3e] hover:text-white border-2 border-[#a4ce3e] font-medium rounded-full text-sm transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" class="size-5 mr-2">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                        </svg>
+                        <p>Order Now</p>
                     </a>
                 </div>
+            </div>
+
+            <!-- Hover Card -->
+            <div
+                class="absolute rounded inset-0 bg-black/60 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-center items-center text-white text-center px-4">
+                <div class="mb-4">
+                    <h3 class="font-semibold text-base">Ingredients</h3>
+                    <p class="text-sm text-gray-200">{{ $product->ingredients }}</p>
+                </div>
+                <div class="mb-4">
+                    <h3 class="font-semibold text-base">Expire Date</h3>
+                    <p class="text-sm text-gray-200">{{ $product->expired_date }}</p>
+                </div>
+                <a href="https://wa.me/{{ $product->whatsapp }}" target="_blank"
+                    class="flex items-center px-4 py-2 text-[#a4ce3e] bg-white hover:bg-[#a4ce3e] hover:text-white border-2 border-[#a4ce3e] font-medium rounded-full text-sm transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mr-2">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                    </svg>
+                    Order Now
+                </a>
+            </div>
+        </div>
+        @endforeach
+
+    </div>
+</div>
+
+<div class="flex justify-center pt-10 space-x-2">
+    <a href="{{ route('products.front') }}"
+        class="flex items-center px-3 py-2 sm:px-4 text-white bg-primary hover:bg-white hover:text-[#a4ce3e] border-2 hover:border-primary focus:outline-none font-medium rounded-full text-sm sm:text-md md:text-lg text-center transition-colors">
+        <p>Produk Lainnya</p>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            stroke-width="1.5" stroke="currentColor" class="size-5 ml-2">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+        </svg>
+    </a>
+</div>
+<!-- End Product Section -->
+
             </div>
         </section>
 

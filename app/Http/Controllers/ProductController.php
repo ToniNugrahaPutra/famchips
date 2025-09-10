@@ -15,7 +15,14 @@ class ProductController extends Controller
 
     public function frontendIndex()
     {
-        $products = Product::latest()->paginate(12); // atau ambil semua
+
+        $query = Product::query();
+        if (request()->has('search')) {
+            $search = request()->input('search');
+            $query->where('name', 'like', '%'.$request->search.'%');
+        }
+
+        $products = Product::latest()->paginate(12); 
         return view('frontend.produk', compact('products'));
     }
 

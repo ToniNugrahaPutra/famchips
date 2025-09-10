@@ -19,12 +19,13 @@
     <h2 class="text-2xl font-bold text-gray-800 mb-2">Welcome Back!</h2>
     <p class="text-gray-500 mb-6">keep up the spirit of living the day!</p>
 
-        <!-- {{-- Alert Success --}}
+        {{-- Alert Success --}}
     @if (session('status'))
-        <div class="mb-4 p-3 rounded-lg bg-green-100 text-green-700 text-sm">
-            {{ session('status') }}
-        </div>
-    @endif
+    <div class="mb-4 p-4 rounded-lg bg-green-100 text-green-700 text-sm text-center">
+        {{ session('status') }}
+    </div>
+@endif
+
 
     {{-- Alert Error --}}
     @if (session('error'))
@@ -42,7 +43,7 @@
                 @endforeach
             </ul>
         </div>
-    @endif -->
+    @endif
 
 
     {{-- Form Login --}}

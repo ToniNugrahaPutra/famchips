@@ -5,10 +5,11 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\WelcomeController;
 use Illuminate\Support\Facades\Route;
 
 // Landing page
-Route::get('/', fn () => view('welcome'))->name('home');
+Route::get('/', [WelcomeController::class, 'welcome'])->name('home');
 
 
 Route::get('/artikel', [ArticleController::class, 'frontendIndex'])->name('artikel.index');
