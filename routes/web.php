@@ -10,12 +10,13 @@ use Illuminate\Support\Facades\Route;
 // Landing page
 Route::get('/', fn () => view('welcome'))->name('home');
 
-Route::get('/galeri', [GalleryController::class, 'frontendIndex'])->name('gallery.front');
-
-Route::get('/produk', [ProductController::class, 'frontendIndex'])->name('products.front');
 
 Route::get('/artikel', [ArticleController::class, 'frontendIndex'])->name('artikel.index');
 Route::get('/artikel/{article}', [ArticleController::class, 'frontendShow'])->name('artikel.show');
+
+Route::get('/produk', [ProductController::class, 'frontendIndex'])->name('products.front');
+
+Route::view('/gallery', 'frontend.galeri')->name('galeri.index');
 
 
 Route::middleware(['auth', 'verified', \App\Http\Middleware\IsAdmin::class])->group(function () {

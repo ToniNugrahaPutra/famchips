@@ -62,14 +62,14 @@
                             </a>
                         </li>
                         <li>
-                            <a href="{{ route('gallery.front') }}"
+                            <a href="{{ route('galeri.index') }}"
                             class="text-text-second font-semibold text-sm lg:text-base hover:text-primary transition-colors">
                             Product Gallery
                             </a>
                         </li>
 
                         <li>
-                            <a href="javascript:void(0)" onclick="scrollToSection('testi')"
+                            <a href="{{ route('artikel.index') }}"
                                 class="text-text-second font-semibold text-sm lg:text-base hover:text-primary transition-colors">
                                 Blog
                             </a>
@@ -89,25 +89,25 @@
                 class="absolute top-full left-0 w-full bg-white shadow-lg border-t border-gray-200 md:hidden transform -translate-y-2 opacity-0 invisible transition-all duration-300 ease-in-out z-50">
                 <ul class="flex flex-col font-medium py-4">
                     <li>
-                        <a href="index"
+                        <a href="{{ route('home') }}"
                             class="block py-3 px-6 text-text-second font-semibold hover:text-primary hover:bg-gray-50 transition-colors">
                             Home
                         </a>
                     </li>
                     <li>
-                        <a href="<a href="{{ route('products.front') }}""
+                        <a href="{{ route('products.front') }}"
                             class="block py-3 px-6 text-text-second font-semibold hover:text-primary hover:bg-gray-50 transition-colors">
                             Our Product
                         </a>
                     </li>
                     <li>
-                        <a href="<a href="{{ route('gallery.front') }}""
+                        <a href="{{ route('galeri.index') }}"
                             class="block py-3 px-6 text-text-second font-semibold hover:text-primary hover:bg-gray-50 transition-colors">
                             Product Gallery
                         </a>
                     </li>
                     <li>
-                        <a href="javascript:void(0)" onclick="scrollToSection('testi')"
+                        <a href="{{ route('artikel.index') }}"
                             class="block py-3 px-6 text-text-second font-semibold hover:text-primary hover:bg-gray-50 transition-colors">
                             Blog
                         </a>

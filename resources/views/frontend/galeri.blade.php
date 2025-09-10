@@ -65,7 +65,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="{{ route('gallery.front') }}"
+                            <a href="{{ route('galeri.index') }}"
                             class="text-text-second font-semibold text-sm lg:text-base hover:text-primary transition-colors">
                             Product Gallery
                             </a>
@@ -98,19 +98,19 @@
                         </a>
                     </li>
                     <li>
-                        <a href="<a href="{{ route('products.front') }}""
+                        <a href="{{ route('products.front') }}"
                             class="block py-3 px-6 text-text-second font-semibold hover:text-primary hover:bg-gray-50 transition-colors">
                             Our Product
                         </a>
                     </li>
                     <li>
-                        <a href="<a href="{{ route('gallery.front') }}""
+                        <a href="{{ route('galeri.index') }}"
                             class="block py-3 px-6 text-text-second font-semibold hover:text-primary hover:bg-gray-50 transition-colors">
                             Product Gallery
                         </a>
                     </li>
                     <li>
-                        <a href="javascript:void(0)" onclick="scrollToSection('testi')"
+                        <a href="{{ route('artikel.index') }}"
                             class="block py-3 px-6 text-text-second font-semibold hover:text-primary hover:bg-gray-50 transition-colors">
                             Blog
                         </a>

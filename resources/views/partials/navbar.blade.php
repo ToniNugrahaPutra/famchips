@@ -8,7 +8,7 @@
         <ul class="hidden md:flex space-x-6 font-medium">
             <li><a href="/" class="hover:text-primary">Home</a></li>
             <li><a href="/products" class="hover:text-primary">Our Product</a></li>
-            <li><a href="/gallery" class="hover:text-primary">Product Gallery</a></li>
+            <li><a href="{{ route('galeri.index') }}" class="hover:text-primary">Product Gallery</a></li>
             <li><a href="/articles" class="hover:text-primary">Blog</a></li>
             <li>
                 <a href="https://wa.me/+6281333500579" target="_blank"

@@ -19,7 +19,8 @@
             <div class="flex items-center gap-4">
                 <a href="/artikel" class="text-gray-700 hover:text-lime-600">Artikel</a>
                 <a href="/produk" class="text-gray-700 hover:text-lime-600">Produk</a>
-                <a href="/galeri" class="text-gray-700 hover:text-lime-600">Galeri</a>
+                <a href="{{ route('galeri.index') }}" class="hover:text-primary">Product Gallery</a>
+
 
                 @guest
                     <a href="{{ route('login') }}" class="px-4 py-2 bg-lime-600 text-white rounded-lg hover:bg-lime-700">Login</a>
