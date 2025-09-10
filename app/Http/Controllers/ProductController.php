@@ -13,6 +13,12 @@ class ProductController extends Controller
         return view('products.index', compact('products'));
     }
 
+    public function frontendIndex()
+    {
+        $products = Product::latest()->paginate(12); // atau ambil semua
+        return view('frontend.produk', compact('products'));
+    }
+
     public function create()
     {
         return view('products.create');

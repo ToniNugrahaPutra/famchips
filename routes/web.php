@@ -1,12 +1,21 @@
 <?php
 
+use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', fn () => view('welcome'));
+// Landing page
+Route::get('/', fn () => view('welcome'))->name('home');
+
+Route::get('/galeri', [GalleryController::class, 'frontendIndex'])->name('gallery.front');
+
+Route::get('/produk', [ProductController::class, 'frontendIndex'])->name('products.front');
+
+Route::get('/artikel', [ArticleController::class, 'frontendIndex'])->name('artikel.index');
+Route::get('/artikel/{article}', [ArticleController::class, 'frontendShow'])->name('artikel.show');
 
 
 Route::middleware(['auth', 'verified', \App\Http\Middleware\IsAdmin::class])->group(function () {
@@ -14,6 +23,7 @@ Route::middleware(['auth', 'verified', \App\Http\Middleware\IsAdmin::class])->gr
     Route::resource('products', ProductController::class);
     Route::resource('articles', ArticleController::class);
 });
+
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

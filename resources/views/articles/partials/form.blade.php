@@ -1,48 +1,56 @@
 @csrf
 
 {{-- Preview Gambar --}}
-<div class="text-center mb-4">
-    <label for="image" class="d-block">
+<div class="text-center mb-6">
+    <label for="image" class="cursor-pointer inline-block">
         <img id="preview" 
              src="{{ isset($article) && $article->image 
                         ? asset('storage/'.$article->image) 
                         : 'https://via.placeholder.com/300x200?text=Upload+Image' }}"
-             class="rounded border border-2 mx-auto d-block"
-             style="cursor:pointer; max-height: 250px; max-width: 300px; width: 100%; object-fit: cover;">
+             class="rounded-lg border-2 border-gray-300 mx-auto"
+             style="max-height: 250px; max-width: 300px; object-fit: cover;">
     </label>
-    <input type="file" name="image" id="image" class="d-none" accept="image/*"
+    <input type="file" name="image" id="image" class="hidden" accept="image/*"
            onchange="previewImage(event)">
 </div>
 
-<div class="row">
-    <div class="col-md-6">
-        <div class="mb-3">
-            <label for="title" class="form-label">Judul Artikel</label>
-            <input type="text" class="form-control" name="title" 
-                   value="{{ old('title', $article->title ?? '') }}"
-                   placeholder="Masukkan judul artikel" required>
-        </div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+    {{-- Judul --}}
+    <div>
+        <label for="title" class="block text-sm font-medium text-gray-700">Judul Artikel</label>
+        <input type="text" name="title" id="title"
+               value="{{ old('title', $article->title ?? '') }}"
+               placeholder="Masukkan judul artikel"
+               required
+               class="mt-1 block w-full rounded-lg border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
     </div>
-    <div class="col-md-6">
-        <div class="mb-3">
-            <label for="status" class="form-label">Status</label>
-            <select name="status" class="form-select" required>
-                <option value="draft" {{ old('status', $article->status ?? '') === 'draft' ? 'selected' : '' }}>Draft</option>
-                <option value="published" {{ old('status', $article->status ?? '') === 'published' ? 'selected' : '' }}>Published</option>
-            </select>
-        </div>
+
+    {{-- Status --}}
+    <div>
+        <label for="status" class="block text-sm font-medium text-gray-700">Status</label>
+        <select name="status" id="status" required
+                class="mt-1 block w-full rounded-lg border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+            <option value="draft" {{ old('status', $article->status ?? '') === 'draft' ? 'selected' : '' }}>Draft</option>
+            <option value="published" {{ old('status', $article->status ?? '') === 'published' ? 'selected' : '' }}>Published</option>
+        </select>
     </div>
 </div>
 
-
-<div class="mb-3">
-    <label for="description" class="form-label">Deskripsi</label>
-    <textarea name="description" class="form-control" rows="10" 
-              placeholder="Tulis deskripsi..." required>{{ old('description', $article->description ?? '') }}</textarea>
+{{-- Deskripsi --}}
+<div class="mb-6">
+    <label for="description" class="block text-sm font-medium text-gray-700">Deskripsi</label>
+    <textarea name="description" id="description" rows="10"
+              placeholder="Tulis deskripsi..."
+              required
+              class="mt-1 block w-full rounded-lg border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">{{ old('description', $article->description ?? '') }}</textarea>
 </div>
 
-<div class="d-flex justify-content-end">
-    <button type="submit" class="btn btn-success">{{ $submit ?? 'Simpan' }}</button>
+{{-- Tombol --}}
+<div class="flex justify-end">
+    <button type="submit"
+            class="px-6 py-2 bg-green-600 text-white rounded-lg shadow hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500">
+        {{ $submit ?? 'Simpan' }}
+    </button>
 </div>
 
 {{-- Preview image script --}}

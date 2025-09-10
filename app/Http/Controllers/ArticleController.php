@@ -9,10 +9,31 @@ use Illuminate\Support\Facades\Storage;
 class ArticleController extends Controller
 {
     public function index()
-    {
-        $articles = Article::latest()->paginate(10);
-        return view('articles.index', compact('articles'));
-    }
+{
+    $articles = Article::latest()->paginate(9);
+
+    return view('articles.index', [
+        'articles' => $articles,
+        'hero' => $articles->first(), 
+    ]);
+}
+
+public function frontendIndex()
+{
+    $articles = Article::latest()->paginate(9);
+
+    return view('frontend.artikel', [
+        'articles' => $articles,
+        'hero' => $articles->first(),
+    ]);
+}
+
+public function frontendShow(Article $article)
+{
+    return view('frontend.artikel-show', [
+        'article' => $article,
+    ]);
+}
 
     public function create()
     {

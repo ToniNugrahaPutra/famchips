@@ -4,39 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ config('app.name', 'Famchips Admin') }}</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    @vite('resources/css/app.css')
+    @vite('resources/js/app.js')
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 </head>
-<body class="bg-light">
+<body class="bg-gray-100 min-h-screen flex flex-col">
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
-        <div class="container">
-            <a class="navbar-brand" href="{{ route('dashboard') }}">Famchips</a>
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav ms-auto">
-                    @auth
-                        <li class="nav-item"><a href="{{ route('dashboard') }}" class="nav-link">Dashboard</a></li>
-                        <li class="nav-item"><a href="{{ route('products.index') }}" class="nav-link">Products</a></li>
-                        <li class="nav-item"><a href="{{ route('articles.index') }}" class="nav-link">Articles</a></li>
-                        <li class="nav-item">
-                            <form action="{{ route('logout') }}" method="POST" class="d-inline">
-                                @csrf
-                                <button type="submit" class="btn btn-link nav-link">Logout</button>
-                            </form>
-                        </li>
-                    @endauth
-                </ul>
+    {{-- Navbar --}}
+    <nav class="bg-gray-800 text-white shadow">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="{{ route('dashboard') }}" class="text-lg font-bold">Famchips</a>
+            
+            <div class="flex items-center space-x-4">
+                @auth
+                    <a href="{{ route('dashboard') }}" class="hover:text-gray-300">Dashboard</a>
+                    <a href="{{ route('products.index') }}" class="hover:text-gray-300">Products</a>
+                    <a href="{{ route('articles.index') }}" class="hover:text-gray-300">Articles</a>
+                    <form action="{{ route('logout') }}" method="POST" class="inline">
+                        @csrf
+                        <button type="submit" class="hover:text-gray-300">Logout</button>
+                    </form>
+                @endauth
             </div>
         </div>
     </nav>
 
-    <main class="container">
+    {{-- Main Content --}}
+    <main class="container mx-auto px-4 py-6 flex-grow">
         @if(session('success'))
-            <div class="alert alert-success">{{ session('success') }}</div>
+            <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded mb-4">
+                {{ session('success') }}
+            </div>
         @endif
 
         @yield('content')
     </main>
-<script src="https://cdn.ckeditor.com/4.22.1/standard/ckeditor.js"></script>
+
+    {{-- CKEditor --}}
+    <script src="https://cdn.ckeditor.com/4.22.1/standard/ckeditor.js"></script>
 </body>
 </html>
