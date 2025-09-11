@@ -56,11 +56,11 @@
 
                 {{-- Tombol aksi --}}
                 <div class="px-4 py-3 bg-gray-50 border-t flex justify-between items-center">
-                    <a href="{{ route('articles.edit', $article->id) }}"
+                    <a href="{{ route('articles.edit', $article->slug) }}"
                        class="px-3 py-1 text-xs font-medium bg-yellow-500 text-white rounded hover:bg-yellow-600">
                         Edit
                     </a>
-                    <form action="{{ route('articles.destroy', $article->id) }}" method="POST"
+                    <form action="{{ route('articles.destroy', $article->slug) }}" method="POST"
                           onsubmit="return confirm('Yakin hapus artikel ini?')">
                         @csrf
                         @method('DELETE')

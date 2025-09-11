@@ -8,6 +8,7 @@
     <title>{{ config('app.name', 'Famchips') }}</title>
     @vite('resources/css/app.css')
     @vite('resources/js/app.js')
+    <link rel="icon" href="{{ asset('images/logo2.png') }}" type="image/png" />
 </head>
 <body class="bg-gray-50 text-gray-800">
 
@@ -17,9 +18,10 @@
             <a href="/" class="text-2xl font-bold text-lime-600">Famchips</a>
 
             <div class="flex items-center gap-4">
-                <a href="/artikel" class="text-gray-700 hover:text-lime-600">Artikel</a>
-                <a href="/produk" class="text-gray-700 hover:text-lime-600">Produk</a>
-                <a href="{{ route('galeri.index') }}" class="hover:text-primary">Product Gallery</a>
+                <a href="{{ route('artikel.index') }}" class="text-gray-700 hover:text-lime-600">Artikel</a>
+                <a href="{{ route('products.front') }}" class="text-gray-700 hover:text-lime-600">Produk</a>
+                <a href="{{ route('galeri.index') }}" class="text-gray-700 hover:text-lime-600">Product Gallery</a>
+
 
 
                 @guest

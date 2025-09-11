@@ -6,7 +6,20 @@
 
     <form action="{{ route('articles.store') }}" method="POST" enctype="multipart/form-data"
           class="bg-white p-6 rounded-lg shadow">
-        @include('articles.partials.form', ['submit' => 'Tambah'])
+        @csrf
+
+        {{-- Kirim $article = null supaya partial aman --}}
+        @include('articles.partials.form', [
+            'submit' => 'Tambah Artikel',
+            'article' => null,
+        ])
+
+        <div class="mt-4">
+            <a href="{{ route('articles.index') }}" 
+               class="px-4 py-2 bg-gray-500 text-white rounded-lg shadow hover:bg-gray-600">
+                Kembali
+            </a>
+        </div>
     </form>
 </div>
 @endsection

@@ -6,6 +6,7 @@
     <title>{{ config('app.name', 'Famchips Admin') }}</title>
     @vite('resources/css/app.css')
     @vite('resources/js/app.js')
+    <link rel="icon" href="{{ asset('images/logo2.png') }}" type="image/png" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 </head>
 <body class="bg-gray-100 min-h-screen flex flex-col">

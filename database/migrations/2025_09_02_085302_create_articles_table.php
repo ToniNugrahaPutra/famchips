@@ -10,11 +10,12 @@ return new class extends Migration
     {
         Schema::create('articles', function (Blueprint $table) {
             $table->id();
-            $table->string('title');             // Judul artikel
-            $table->enum('status', ['draft', 'published'])->default('draft'); // Status
-            $table->longText('description');     // Isi artikel
-            $table->string('image')->nullable(); // Gambar
-            $table->timestamps();
+            $table->string('title');
+            $table->string('slug')->unique(); // untuk URL unik
+            $table->enum('status', ['draft', 'published'])->default('draft');
+            $table->longText('description');
+            $table->string('image')->nullable(); // opsional gambar
+            $table->timestamps(); // created_at & updated_at
         });
     }
 

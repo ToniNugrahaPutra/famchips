@@ -1,5 +1,3 @@
-@csrf
-
 {{-- Preview Gambar --}}
 <div class="text-center mb-6">
     <label for="image" class="cursor-pointer inline-block">
@@ -12,6 +10,9 @@
     </label>
     <input type="file" name="image" id="image" class="hidden" accept="image/*"
            onchange="previewImage(event)">
+    @error('image')
+    <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
+    @enderror
 </div>
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
@@ -23,6 +24,9 @@
                placeholder="Masukkan judul artikel"
                required
                class="mt-1 block w-full rounded-lg border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+        @error('title')
+        <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
+        @enderror
     </div>
 
     {{-- Status --}}
@@ -33,6 +37,9 @@
             <option value="draft" {{ old('status', $article->status ?? '') === 'draft' ? 'selected' : '' }}>Draft</option>
             <option value="published" {{ old('status', $article->status ?? '') === 'published' ? 'selected' : '' }}>Published</option>
         </select>
+        @error('status')
+        <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
+        @enderror
     </div>
 </div>
 
@@ -43,6 +50,9 @@
               placeholder="Tulis deskripsi..."
               required
               class="mt-1 block w-full rounded-lg border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">{{ old('description', $article->description ?? '') }}</textarea>
+    @error('description')
+    <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
+    @enderror
 </div>
 
 {{-- Tombol --}}
